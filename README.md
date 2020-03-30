@@ -1,2 +1,3 @@
-# mypets-backend
-mypets app backend repository using Express
+# mypets
+
+**mypets**'s API repository
