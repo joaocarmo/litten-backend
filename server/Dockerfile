@@ -16,5 +16,5 @@ COPY . .
 # Inform Docker that the container is listening on the specified port at runtime
 EXPOSE 8080
 
-# Run the specified command within the container
-CMD [ "npm", "start" ]
+# Run the development command to start the server in 'watch' mode
+CMD [ "npm", "run", "dev" ]

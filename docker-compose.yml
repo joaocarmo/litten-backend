@@ -1,13 +1,32 @@
 version: '3.7'
 services:
   server:
+    container_name: mypets-server
     build: ./server
+    volumes:
+      - ./server:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
     ports:
       - '8080:8080'
+    networks:
+      - server-network
     depends_on:
       - mongo
+
   mongo:
+    container_name: mypets-mongo
     image: mongo:4.2
+    volumes:     
+      - mongo_data:/data/db
     ports:
       - '27017:27017'
+    networks:
+      - server-network
 
+networks:
+  server-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  node_modules:  
