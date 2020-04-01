@@ -1,11 +1,11 @@
 # Use the official Node.js LTS image as a parent image
-FROM node:current-slim
+FROM node:lts-alpine
 
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the package file to list the dependencies
-COPY package.json .
+# Copy the package file(s) to list the dependencies
+COPY package*.json ./
 
 # Install the dependencies
 RUN npm install
