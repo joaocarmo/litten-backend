@@ -25,6 +25,15 @@ module.exports = function (app) {
       type: String,
       required: true,
     },
+    phoneNumber: {
+      type: String,
+      index: true,
+      unique: true,
+      validate: {
+        validator: (value) => /^\+?[1-9]\d{1,14}$/.test(value),
+        message: ({ value }) => `${value} is not a valid phone number.`,
+      },
+    },
     avatar: {
       type: String,
     },
@@ -33,6 +42,10 @@ module.exports = function (app) {
       default: false,
     },
     emailVerified: {
+      type: Boolean,
+      default: false,
+    },
+    phoneNumberVerified: {
       type: Boolean,
       default: false,
     },
