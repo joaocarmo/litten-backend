@@ -28,5 +28,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb://mongo:27017/mypets"
+  "mongodb": "mongodb://mongo:27017/litten"
 }

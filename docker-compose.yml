@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   server:
-    container_name: mypets-server
+    container_name: litten-server
     build: ./server
     volumes:
       - ./server:/usr/src/app
@@ -9,22 +9,22 @@ services:
     ports:
       - '8080:8080'
     networks:
-      - server-network
+      - litten-network
     depends_on:
       - mongo
 
   mongo:
-    container_name: mypets-mongo
+    container_name: litten-mongo
     image: mongo:4.2
     volumes:     
       - mongo_data:/data/db
     ports:
       - '27017:27017'
     networks:
-      - server-network
+      - litten-network
 
 networks:
-  server-network:
+  litten-network:
     driver: bridge
 
 volumes:

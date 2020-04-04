@@ -1,5 +1,5 @@
 {
-  "name": "mypets-backend",
+  "name": "litten-backend",
   "description": "Finding new friends for furry friends",
   "version": "0.0.0",
   "private": true,
@@ -13,9 +13,9 @@
   },
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/joaocarmo/mypets-backend/issues"
+    "url": "https://github.com/joaocarmo/litten-backend/issues"
   },
-  "homepage": "https://github.com/joaocarmo/mypets-backend#readme",
+  "homepage": "https://github.com/joaocarmo/litten-backend#readme",
   "contributors": [],
   "directories": {
     "lib": "lib",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaocarmo/mypets-backend.git"
+    "url": "git+https://github.com/joaocarmo/litten-backend.git"
   },
   "standard": {
     "env": [

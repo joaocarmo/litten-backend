@@ -1,6 +1,6 @@
-# mypets
+# litten
 
-**mypets**'s API repository
+**litten**'s API repository
 
 ## Development
 
