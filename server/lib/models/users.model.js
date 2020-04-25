@@ -17,13 +17,12 @@ module.exports = function (app) {
       type: String,
       required: true,
     },
-    firstName: {
+    name: {
       type: String,
       required: true,
     },
-    lastName: {
+    country: {
       type: String,
-      required: true,
     },
     phoneNumber: {
       type: String,

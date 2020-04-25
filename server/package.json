@@ -23,7 +23,7 @@
     "config": "config/"
   },
   "engines": {
-    "node": "^13.0.0",
+    "node": ">= 12.0.0",
     "npm": ">= 3.0.0"
   },
   "scripts": {
@@ -31,7 +31,7 @@
     "lint": "eslint lib/. test/. --config .eslintrc.json",
     "dev": "nodemon lib/",
     "start": "node lib/",
-    "jest": "jest  --forceExit"
+    "jest": "jest --forceExit"
   },
   "repository": {
     "type": "git",
